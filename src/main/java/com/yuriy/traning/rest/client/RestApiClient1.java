@@ -4,6 +4,8 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
 
+import com.yuriy.traning.messenger.model.Message;
+
 public class RestApiClient1 {
 
 	public static void main(String[] args) {
@@ -14,7 +16,9 @@ public class RestApiClient1 {
 				                  .request()
 				                  .get();
 		
-		System.out.println(response);
+		Message message = response.readEntity(Message.class);
+		
+		System.out.println(message.getMessage());
 
 	}
 
