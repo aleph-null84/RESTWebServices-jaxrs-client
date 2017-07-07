@@ -8,7 +8,7 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.koushik.javabrains.messenger.model.Message;
+import com.yuriy.traning.messenger.model.Message;
 
 public class GenericDemo {
 
